@@ -1,0 +1,34 @@
+DELETE http://localhost:3001/api/blogs/:id HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3001/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+
+{
+    "title":"name1",
+    "author":"him",
+    "url":"http://fakeblog1.fi",
+    "likes":4
+}
+
+###
+
+DELETE http://localhost:3001/api/blogs/64e7b8f2c2a4e2b1a1c2d3e4 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:3001/api/blogs/689f1818a673dff3efdef961 HTTP/1.1
+content-type: application/json
+
+{
+    "title":"name20",
+    "author":"her",
+    "url":"http://fakeblog20.fi",
+    "likes":6343
+}

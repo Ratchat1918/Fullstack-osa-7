@@ -1,0 +1,17 @@
+DELETE http://localhost:3003/api/notes/:id HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3003/api/notes
+
+###
+
+POST http://localhost:3003/api/notes HTTP/1.1
+content-type: application/json
+
+{
+    "title":"name",
+    "author":"me",
+    "url":"http://fakeblog.fi",
+    "likes":3
+}
